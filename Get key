@@ -22,7 +22,7 @@ local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 -- Properties:
 
 notfic.Name = "notfic"
-notfic.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+notfic.Parent = game:GetService("CoreGui")
 notfic.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 backNOT.Name = "backNOT"
@@ -126,7 +126,7 @@ UIAspectRatioConstraint_6.DominantAxis = Enum.DominantAxis.Height
 local discordLink = "https://direct-link.net/409098/synix-hub-key"
 setclipboard(discordLink)
 
-local duration = 5 -- Duração da notificação em segundos
+local duration = 3 -- Duração da notificação em segundos
 local endTime = tick() + duration
 
 while tick() < endTime do
